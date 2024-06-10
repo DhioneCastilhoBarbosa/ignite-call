@@ -35,7 +35,7 @@ interface CalendarPros {
 }
 
 export default function Calendar({
-  selectedDate,
+  // selectedDate,
   onDateSelected,
 }: CalendarPros) {
   const [currentDate, setCurrentDate] = useState(() => {

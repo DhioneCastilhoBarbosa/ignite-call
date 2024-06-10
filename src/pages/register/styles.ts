@@ -15,8 +15,8 @@ export const Header = styled('div', {
 
   [`> ${Text}`]: {
     color: '$gray200',
-    marginBottom: '$6'
-  }
+    marginBottom: '$6',
+  },
 })
 
 export const Form = styled(Box, {
@@ -28,9 +28,9 @@ export const Form = styled(Box, {
     display: 'flex',
     flexDirection: 'column',
     gap: '$2',
-  }
+  },
 })
 
-export const FormError = styled(Text,{
+export const FormError = styled(Text, {
   color: '#f75a68',
 })

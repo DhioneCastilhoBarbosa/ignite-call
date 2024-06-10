@@ -94,6 +94,7 @@ export default function TimeInterval() {
   const { fields } = useFieldArray({ control, name: 'intervals' })
 
   const intervals = watch('intervals')
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async function handleSetTimeIntervals(data: any) {
     const { intervals } = data as TimeIntervalsFormOutput
     await api.post('/users/time-intervals', { intervals })
@@ -138,6 +139,7 @@ export default function TimeInterval() {
                   </IntervalDay>
                   <IntervalInputs>
                     <TextInput
+                      crossOrigin={undefined}
                       size="sm"
                       type="time"
                       step={60}
@@ -145,6 +147,7 @@ export default function TimeInterval() {
                       {...register(`intervals.${index}.startTime`)}
                     />
                     <TextInput
+                      crossOrigin={undefined}
                       size="sm"
                       type="time"
                       step={60}
