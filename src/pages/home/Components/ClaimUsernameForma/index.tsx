@@ -38,6 +38,7 @@ export function ClaimUsernameForm() {
     <>
       <Form as="form" onSubmit={handleSubmit(handleClaimUsername)}>
         <TextInput
+          crossOrigin={undefined}
           size="sm"
           prefix="ignite.com/"
           placeholder="seu-usuario"
